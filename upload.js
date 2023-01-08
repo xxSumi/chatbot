@@ -103,8 +103,8 @@ function resize(loadedImage) {
         ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, resizedWidth, resizedHeight);
         var quality;
         const filetype = loadedImage["filetype"];
-        if (filetype == "image/jpg") {
-            quality = JPG_QUALITY;
+        if (filetype == "image/jpeg") {
+            quality = JPEG_QUALITY;
         } else {
             quality = 1;
         }
