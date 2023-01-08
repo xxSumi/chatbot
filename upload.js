@@ -13,7 +13,7 @@ function fileUpload(file) {
         .then(loadImage)
         .then(resize)
         .then(blob => {
-            return Promise.all([showPreview(blob), fetch("https://github.com/xxSumi/uploader/upload/main/photos", { method: "POST", body: blob })]);
+            return Promise.all([showPreview(blob), fetch("/api/upload.py", { method: "POST", body: blob })]);
         })
         .then(showResult)
         .catch(showResult);
@@ -153,3 +153,7 @@ uploadList.addEventListener("drop", event => {
         fileUpload(file);
     });
 });
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
