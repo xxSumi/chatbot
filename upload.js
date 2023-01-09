@@ -13,7 +13,7 @@ function fileUpload(file) {
         .then(loadImage)
         .then(resize)
         .then(blob => {
-            return Promise.all([showPreview(blob), fetch("https://github.com/xxSumi/uploader/blob/main.git", { method: "POST", body: blob })]);
+            return Promise.all([showPreview(blob), fetch("https://github.com/xxSumi/uploader.git", { method: "POST", body: blob })]);
         })
         .then(showResult)
         .catch(showResult);
