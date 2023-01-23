@@ -1,1 +1,1 @@
-# uploader
+# slideshow
