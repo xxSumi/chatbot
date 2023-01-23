@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja" ng-app="MyApp">
+    
 <head>
     <meta charset="UTF-8">
-    <title>Shunsuke &amp; Chihiro Wedding</title>
+    <title>Hiroki &amp; Haruna Wedding</title>
     <link rel="stylesheet" type="text/css" href="asset/reset.css">
     <link rel="stylesheet" type="text/css" href="asset/style.css">
     <script src="bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
@@ -10,6 +11,7 @@
     <script src="bower_components/angular-resource/angular-resource.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="asset/script.js" type="text/javascript" charset="utf-8"></script>
 </head>
+    
 <body>
     <slider></slider>
     <div class="sidebar" ng-if="dataLoaded">
@@ -17,8 +19,9 @@
         <p>只今の投稿枚数</p>
         <p class="nowCnt" ng-bind="images.length"></p>
         <hr />
-        <p>投稿はこちら</p>
-        <p><img src="asset/dropbox.gif" /></p>
+
+        <a href="https://drive.google.com/drive/folders/1s-vgnE5BWVP0uo3XqY0_dQtntrLvd6C8?usp=sharing">投稿はこちら</a>
+
         <hr />
     </div>
 </body>
