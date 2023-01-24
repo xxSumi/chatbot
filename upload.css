@@ -1,5 +1,6 @@
 body {
   text-size-adjust: 100%;
+  background-image:url(/photo/IMG_shirasu.jpg);
 }
 .dragover {
   background: rgb(255, 228, 200);
