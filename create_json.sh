@@ -1,7 +1,7 @@
 #!/bin/sh
-DROP_BOX=/Users/Takahiro/Dropbox/Knight
-HOME_DIR=/Users/Takahiro/Development/www/knight
-IMG_ROOT_DIR=${HOME_DIR}/contest
+DROP_BOX=/photo
+HOME_DIR=/
+IMG_ROOT_DIR=${HOME_DIR}/photo
 IFS_BACKUP=${IFS}
 IFS=$'\n'
 
