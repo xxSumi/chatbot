@@ -1,6 +1,6 @@
 body {
   text-size-adjust: 100%;
-  background-image:url(/photo/IMG_shirasu.jpg);
+  background-image:url("https://github.com/xxSumi/slideshow/blob/main/photo/IMG_shirasu.jpg?raw=true");
 }
 .dragover {
   background: rgb(255, 228, 200);
