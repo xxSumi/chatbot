@@ -1,7 +1,7 @@
 #!/bin/sh
-DROP_BOX=/photo
-HOME_DIR=/
-IMG_ROOT_DIR=${HOME_DIR}/photo
+DROP_BOX=http://sumihh.com
+HOME_DIR=http://sumihh.com
+IMG_ROOT_DIR=${HOME_DIR}/data
 IFS_BACKUP=${IFS}
 IFS=$'\n'
 
