@@ -16,10 +16,43 @@
     <slider></slider>
     <div class="sidebar" ng-if="dataLoaded">
         <hr />
-        <p>只今の投稿枚数</p>
-        <p class="nowCnt" ng-bind="images.length"></p>
-        <hr />
+        <script src="https://riversun.github.io/chatux/chatux.min.js"></script>
+        
+        
+<script>
+    const chatux = new ChatUx();
 
+    //ChatUXの初期化パラメータ
+ const initParam =
+        {
+            renderMode: 'auto',
+            api: {
+                //echo chat server
+                endpoint: 'https://tentoumushi.pythonanywhere.com/chatbot3/chatterbot/',
+                //method: 'GET',
+                //dataType: 'jsonp'
+                method: 'POST',
+                dataType: 'json'
+            },
+            bot: {
+                botPhoto: 'https://hoppara.github.io/image/robot.png',
+                humanPhoto: null,
+                widget: {
+                    sendLabel: '送信',
+                    placeHolder: '何か話しかけてみてください'
+                }
+            },
+            window: {
+                title: 'チャットボット試作品１号',
+                infoUrl: 'https://github.com/riversun/chatux'
+            }
+        };
+    chatux.init(initParam);
+    chatux.start(true);
+
+</script>
+
+        <hr />
         <hr />
     </div>
 </body>
