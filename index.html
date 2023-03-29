@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="ja" ng-app="MyApp">
-    
+
+<html lang="ja" >
+  
 <head>
-    <meta charset="UTF-8">
-    <title>chatbot_prot</title>
-</head>
-    
+  <meta charset="UTF-8">
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./style.css">
+
+  </head>
 <body>
-       
+<!-- partial:index.partial.html -->
+<h1 class="title">chatbot</h1>
+    
 <script>
     const chatux = new ChatUx();
 
     //ChatUXの初期化パラメータ
- const initParam =
+    const initParam =
         {
             renderMode: 'auto',
             api: {
@@ -28,11 +34,11 @@
                 humanPhoto: null,
                 widget: {
                     sendLabel: '送信',
-                    placeHolder: '何か話しかけてみてください'
+                    placeHolder: '質問を入力してください'
                 }
             },
             window: {
-                title: 'チャットボット試作品１号',
+                title: 'チャットボット（仮）',
                 infoUrl: 'https://github.com/riversun/chatux'
             }
         };
@@ -40,9 +46,13 @@
     chatux.start(true);
 
 </script>
+  
 
-        <hr />
-        <hr />
-    </div>
+    <footer>
+        <p class="copyright">
+        Copyright © 2023 Kuma. All Rights Reserved.
+      </p>
+    </footer>
+  
 </body>
 </html>
